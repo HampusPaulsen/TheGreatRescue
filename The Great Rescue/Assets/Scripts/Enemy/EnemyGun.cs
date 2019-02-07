@@ -8,6 +8,7 @@ public class EnemyGun : MonoBehaviour
     int timer = 0;
     public int firerate;
 
+
     // Start is called before the first frame update
     void Start()
     {
