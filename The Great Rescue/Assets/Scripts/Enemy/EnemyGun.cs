@@ -2,32 +2,35 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class EnemyGun : MonoBehaviour
 {
     public GameObject EnemyBulletGO;
-    int timer = 0;
-    public int firerate;
+    float time;
+    public float firerate;
+  
 
 
     // Start is called before the first frame update
     void Start()
     {
         Invoke("FireEnemyBullet", 1f);
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-        timer++;
-        if (timer == firerate)
+        time += Time.deltaTime;
+        if (time >= firerate)
         {
+            time = 0;
             Invoke("FireEnemyBullet", 2f);
-            timer = 0;
-        }
+        }               
           
 
     }
+   
+
     void FireEnemyBullet()
     {
         GameObject player = GameObject.Find("PlayerCharacter");
