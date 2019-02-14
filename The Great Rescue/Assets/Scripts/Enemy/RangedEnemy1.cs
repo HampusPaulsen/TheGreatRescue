@@ -5,14 +5,17 @@ using UnityEngine;
 public class RangedEnemy1 : MonoBehaviour
 {
 
+
     private Transform target;
     private Transform enemyPosition;
     public float speed;
     private float direction;
 
+ 
     // Start is called before the first frame update
     void Start()
     {
+
         target = GameObject.FindGameObjectWithTag("Target").GetComponent<Transform>();
         enemyPosition = GameObject.FindGameObjectWithTag("RangedEnemy1").GetComponent<Transform>();
 
