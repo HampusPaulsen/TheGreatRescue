@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 6070866931447674493}
   - component: {fileID: 9179355775032431902}
   - component: {fileID: 4126220381420791704}
+  - component: {fileID: 7178762942944264138}
+  - component: {fileID: 1373672380535400901}
   m_Layer: 0
   m_Name: EnemyBulletGO
   m_TagString: Untagged
@@ -92,3 +94,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d808601a5ca9cf64bace0138e934adcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7178762942944264138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4756458138964728266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7ebd8016ebcabc4b8fd0ef0915b2f77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!60 &1373672380535400901
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4756458138964728266}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.7, y: 3.21}
+    newSize: {x: 1.5, y: 1.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.45, y: 0.145}
+      - {x: 0.45, y: 0.405}
+      - {x: 0.44, y: 0.525}
+      - {x: 0.32, y: 0.625}
+      - {x: 0.099999994, y: 0.765}
+      - {x: -0.63, y: 0.765}
+      - {x: -0.82, y: 0.59499997}
+      - {x: -0.89, y: 0.545}
+      - {x: -0.90999997, y: 0.465}
+      - {x: -0.90999997, y: 0.295}
+      - {x: -0.71, y: -0.024999999}
+      - {x: -0.5, y: -0.295}
+      - {x: -0.35999998, y: -0.42499998}
+      - {x: -0.01, y: -0.42499998}
+      - {x: 0.08, y: -0.375}
+      - {x: 0.29, y: -0.225}
+      - {x: 0.39, y: -0.085}
