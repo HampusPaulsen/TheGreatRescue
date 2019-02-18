@@ -6,7 +6,7 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     public GameObject RangedEnemy1;
-    float maxspawnrate = 5f;
+    public float maxspawnrate = 5f;
 
 
     // Start is called before the first frame update
@@ -19,26 +19,30 @@ public class EnemySpawner : MonoBehaviour
     void Update()
     {
         
+       
     }
     void SpawnEnemy()
     {
         Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(1, 0));
         Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
         GameObject anEnemy = (GameObject)Instantiate(RangedEnemy1);
-        anEnemy.transform.position = new Vector2(max.x,Random.Range(min.y, max.y));
+        anEnemy.transform.position = new Vector2(max.x,Random.Range(min.y, max.y/2));
 
         Nextspawn();
     }
     void Nextspawn()
     {
         float spawn;
-        if (maxspawnrate > 1f)
+        if (GameObject.Find("PlayerCharacter") != null)
         {
-            spawn = Random.Range(1f, maxspawnrate);
+            if (maxspawnrate > 1f)
+            {
+                spawn = Random.Range(1f, maxspawnrate);
+            }
+            else
+                spawn = 1f;
+            Invoke("SpawnEnemy", spawn);
         }
-        else
-            spawn = 1f;
-        Invoke("SpawnEnemy", spawn);
     }
 
 

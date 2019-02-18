@@ -17,11 +17,14 @@ public class ReloadGameScript : MonoBehaviour
         if (Input.GetKeyDown("r"))
             
         {
-            ScoreScript.ScoreValue = 0;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name); // loads current scene
-                
+            PlayerScript.health = 3;
+            HealthScore.HealthValue = 3;
+            Application.LoadLevel(Application.loadedLevel);
+            //ScoreScript.ScoreValue = 0;
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().name); // loads current scene
 
-            }
+
+        }
        
 
     }

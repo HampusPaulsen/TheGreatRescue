@@ -10,6 +10,15 @@ public class PlayerBullet : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector2.right * Time.deltaTime * bulletVelocity);
-      //  Destroy();
+        //  Destroy();
+    }
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        
+        if (col.gameObject.name == "RangedEnemy1(Clone)")
+        {
+          
+            Destroy(gameObject);
+        }
     }
 }

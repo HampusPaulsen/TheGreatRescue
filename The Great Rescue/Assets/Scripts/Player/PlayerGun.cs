@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class PlayerGun : MonoBehaviour
 {
-    [SerializeField]
-    private float firerate = 0.0f; //Change to change firerate
-
-    [SerializeField]
-    private float damage = 0; //Damage not used for now
+    // [SerializeField]
+    //private float firerate = 0.0f; //Change to change firerate
+    AudioSource m_MyAudioSource;
 
     [SerializeField]
     private LayerMask whatToHit; //Remember to include layers that should be able to be hit
@@ -19,6 +17,13 @@ public class PlayerGun : MonoBehaviour
     Transform firePoint;
 
     float fireTimer = 0;
+    float time;
+    public float firerate;
+    void Start()
+    {
+        m_MyAudioSource = GetComponent<AudioSource>();
+    }
+
 
     void Awake()
     {
@@ -28,24 +33,38 @@ public class PlayerGun : MonoBehaviour
 
     void Update()
     {
-        if (firerate == 0)
+        /* if (firerate == 0)
+         {
+             if (Input.GetKeyUp(KeyCode.Space))
+             {
+                 Shoot();
+             }
+             else
+
+
+
+             {
+                 if (Input.GetKeyUp(KeyCode.Space) && Time.time > fireTimer)
+                 {
+                     fireTimer = Time.time + 1 / firerate;
+                     Shoot();
+                 }
+             }
+         }*/
+        time += Time.deltaTime;
+        if (Input.GetKeyUp(KeyCode.Space) && time >= firerate)
         {
-            if (Input.GetKeyUp(KeyCode.Space))
-            {
-                Shoot();
-            }
-            else
-
-                
-
-            {
-                if (Input.GetKeyUp(KeyCode.Space) && Time.time > fireTimer)
-                {
-                    fireTimer = Time.time + 1 / firerate;
-                    Shoot();
-                }
-            }
+            time = 0;
+            m_MyAudioSource.Play();
+            Shoot();
         }
+
+
+
+
+
+
+
     }
 
     void Shoot()
