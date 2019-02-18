@@ -1,24 +1,39 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class PlaceholderPlayerBulletScript : MonoBehaviour
 {
-
+    
+ 
     void OnCollisionEnter2D(Collision2D col)
     {
         //checks if colliding with something named PlayerCharacter
         if (col.gameObject.tag == "RangedEnemy1")
         {
+
+
+            //Score.text = "Score: " + ScoreValue;
             {
 
                 //prints in console what it collides with 4 testing
-                print("Player arrow collided with: " + col.gameObject.name);
+               
+
+
                 Destroy(col.gameObject);
+                ScoreScript.ScoreValue += 1;
 
 
 
             }
+
+            
+
         }
+
+        
     }
+
+    
 }

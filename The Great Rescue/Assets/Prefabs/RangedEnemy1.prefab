@@ -131,6 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 648487411758188525}
   - component: {fileID: 648487411758188524}
+  - component: {fileID: 7338638335225760982}
   m_Layer: 0
   m_Name: FirePoint
   m_TagString: Untagged
@@ -167,3 +168,15 @@ MonoBehaviour:
   EnemyBulletGO: {fileID: 4756458138964728266, guid: 32df9202e70ac5949ad61f856f903568,
     type: 3}
   firerate: 2
+--- !u!114 &7338638335225760982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648487411758188526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33ecfc81afa32984ca60c867e8c99478, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

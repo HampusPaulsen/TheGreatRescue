@@ -30,13 +30,16 @@ public class PlayerGun : MonoBehaviour
     {
         if (firerate == 0)
         {
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetKeyUp(KeyCode.Space))
             {
                 Shoot();
             }
             else
+
+                
+
             {
-                if (Input.GetKey(KeyCode.Space) && Time.time > fireTimer)
+                if (Input.GetKeyUp(KeyCode.Space) && Time.time > fireTimer)
                 {
                     fireTimer = Time.time + 1 / firerate;
                     Shoot();

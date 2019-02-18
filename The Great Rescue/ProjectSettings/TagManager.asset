@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Target
   - RangedEnemy1
+  - Boundary
+  - PlayerBullet
   layers:
   - Default
   - TransparentFX
