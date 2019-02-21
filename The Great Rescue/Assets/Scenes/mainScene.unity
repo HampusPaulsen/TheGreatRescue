@@ -1241,7 +1241,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'HEALTH: 3'
+  m_Text: 'HEALTH: 5'
 --- !u!222 &268099685
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2385,8 +2385,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84d9b303972e12f48ac6e56611cf87d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
+  health: 5
+  Rend5: {fileID: 1695799658}
+  Rend4: {fileID: 2020225376}
+  Rend3: {fileID: 434569090}
+  Rend2: {fileID: 59976738}
+  Rend1: {fileID: 1884259899}
 --- !u!1 &1261027671
 GameObject:
   m_ObjectHideFlags: 0

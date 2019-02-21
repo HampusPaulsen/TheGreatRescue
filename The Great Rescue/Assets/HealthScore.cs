@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class HealthScore : MonoBehaviour
 {
-    public static int HealthValue= 3;
+    public static int HealthValue= 5;
     
     Text Score;
 

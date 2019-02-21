@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerScript : MonoBehaviour
 {
     AudioSource m_MyAudioSource;
-    public static int health = 3;
+    public static int health = 5;
 
     [SerializeField]
     private float speed = 3.0f; //Change this to change the speed of the player character
