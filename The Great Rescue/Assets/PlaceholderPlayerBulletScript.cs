@@ -16,24 +16,9 @@ public class PlaceholderPlayerBulletScript : MonoBehaviour
 
             //Score.text = "Score: " + ScoreValue;
             {
-
-                //prints in console what it collides with 4 testing
-               
-
-
                 Destroy(col.gameObject);
                 ScoreScript.ScoreValue += 1;
-
-
-
             }
-
-            
-
         }
-
-        
     }
-
-    
 }
