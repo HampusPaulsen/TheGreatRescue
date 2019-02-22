@@ -18,7 +18,7 @@ public class HeartScript : MonoBehaviour
     {
         
 
-        //3 hearts mode
+        
         
 
 

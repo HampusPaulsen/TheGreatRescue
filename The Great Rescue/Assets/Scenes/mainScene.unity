@@ -1084,8 +1084,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -521, y: 90}
-  m_SizeDelta: {x: 500, y: 500}
+  m_AnchoredPosition: {x: -862, y: 456}
+  m_SizeDelta: {x: 187.4, y: 99.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &268099683
 MonoBehaviour:
@@ -1132,7 +1132,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'HEALTH: 3'
+  m_Text: 'HEALTH: 5'
 --- !u!222 &268099685
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1754,7 +1754,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9d40f3d0e28a24469e78d3a1622a709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loc: 3
   RangedEnemy1: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983,
     type: 3}
 --- !u!4 &637723489
@@ -1955,15 +1954,15 @@ RectTransform:
   m_GameObject: {fileID: 654763170}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5865, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 645925286}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 523, y: 106}
-  m_SizeDelta: {x: 500, y: 500}
+  m_AnchoredPosition: {x: 878.3, y: 490}
+  m_SizeDelta: {x: 165.81, y: 56.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &654763172
 MonoBehaviour:
@@ -2062,7 +2061,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9d40f3d0e28a24469e78d3a1622a709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loc: 6
   RangedEnemy1: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983,
     type: 3}
 --- !u!1 &813219791
@@ -2137,7 +2135,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9d40f3d0e28a24469e78d3a1622a709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loc: 2
   RangedEnemy1: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983,
     type: 3}
 --- !u!4 &1096017384
@@ -2289,7 +2286,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9d40f3d0e28a24469e78d3a1622a709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loc: 5
   RangedEnemy1: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983,
     type: 3}
 --- !u!1 &1415941242
@@ -2592,7 +2588,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9d40f3d0e28a24469e78d3a1622a709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loc: 4
   RangedEnemy1: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983,
     type: 3}
 --- !u!1 &1465168781
