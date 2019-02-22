@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 2615797213479431567}
   - component: {fileID: 8618245842933910408}
   - component: {fileID: 7694015844271690387}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RangedEnemy1
   m_TagString: RangedEnemy1
   m_Icon: {fileID: 0}
@@ -88,10 +88,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2615797213479431566}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 37.33, y: -5.46, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 0.254, y: 0.169, z: 1}
   m_Children:
   - {fileID: 2615797213147618398}
+  - {fileID: 6895723565611790681}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -158,6 +159,7 @@ MonoBehaviour:
   speed: 10
   health: 1
   PowerUp: {fileID: 8266097504255964015, guid: 29e976e8a62d87a469119bf9eb54bd47, type: 3}
+  targ: {fileID: 3680383941768100686}
 --- !u!61 &2615797213479431567
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -301,3 +303,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &3680383941768100686
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6895723565611790681}
+  m_Layer: 9
+  m_Name: targ
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6895723565611790681
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3680383941768100686}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -70, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2615797213479431570}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

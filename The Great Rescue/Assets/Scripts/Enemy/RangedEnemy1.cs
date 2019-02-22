@@ -12,13 +12,16 @@ public class RangedEnemy1 : MonoBehaviour
     public int health = 1;
     private float direction;
     public GameObject PowerUp;
+    public GameObject targ;
 
- 
+
+
     // Start is called before the first frame update
     void Start()
     {
 
-        target = new Vector2(Random.Range(5,15), Random.Range(5, -10));
+        // target = new Vector2(Random.Range(5,15), Random.Range(5, -10));
+        target = targ.transform.position;
         position = gameObject.transform.position;
 
     }

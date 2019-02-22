@@ -17,9 +17,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Background
+  - Enemy
+  - Powerup
   - 
   - 
   - 
@@ -47,4 +47,7 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 1884898337
+    locked: 0
+  - name: asd
+    uniqueID: 1638606153
     locked: 0
