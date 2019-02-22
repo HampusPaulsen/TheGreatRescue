@@ -17,8 +17,8 @@ public class ReloadGameScript : MonoBehaviour
         if (Input.GetKeyDown("r"))
             
         {
-            PlayerScript.health = 3;
-            HealthScore.HealthValue = 3;
+            PlayerScript.health = 5;
+            HealthScore.HealthValue = 5;
             Application.LoadLevel(Application.loadedLevel);
             //ScoreScript.ScoreValue = 0;
             //SceneManager.LoadScene(SceneManager.GetActiveScene().name); // loads current scene
