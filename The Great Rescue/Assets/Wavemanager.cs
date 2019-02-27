@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawn2 : MonoBehaviour
+public class Wavemanager : MonoBehaviour
 {
+
+    public int bodycount= 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +15,6 @@ public class Spawn2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        print(bodycount);
     }
 }
