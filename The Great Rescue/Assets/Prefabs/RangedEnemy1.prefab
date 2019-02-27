@@ -160,8 +160,6 @@ MonoBehaviour:
   health: 1
   PowerUp: {fileID: 8266097504255964015, guid: 29e976e8a62d87a469119bf9eb54bd47, type: 3}
   targ: {fileID: 3680383941768100686}
-  WaveManager: {fileID: 6594300446828202344, guid: 0bac1172b52c00b4ba337045cc960274,
-    type: 3}
 --- !u!61 &2615797213479431567
 BoxCollider2D:
   m_ObjectHideFlags: 0
