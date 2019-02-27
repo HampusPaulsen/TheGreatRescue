@@ -13,13 +13,18 @@ public class RangedEnemy1 : MonoBehaviour
     private float direction;
     public GameObject PowerUp;
     public GameObject targ;
+    public GameObject WaveManager;
+    public Wavemanager wave;
+    
+   
 
+    
 
 
     // Start is called before the first frame update
     void Start()
     {
-
+        
         // target = new Vector2(Random.Range(5,15), Random.Range(5, -10));
         target = targ.transform.position;
         position = gameObject.transform.position;
@@ -31,6 +36,9 @@ public class RangedEnemy1 : MonoBehaviour
     {
         if (GameObject.Find("PlayerCharacter") == null)
         {
+
+            WaveManager.GetComponent<Wavemanager>().bodycount= 25;
+           
             Destroy(gameObject);
         }
         if (health == 0)
