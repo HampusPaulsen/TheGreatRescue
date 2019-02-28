@@ -15,10 +15,11 @@ public class PlayerBullet : MonoBehaviour
     void OnCollisionEnter2D(Collision2D col)
     {
         
-        if (col.gameObject.name == "RangedEnemy1(Clone)")
+        if (col.gameObject.tag == "RangedEnemy1")
         {
           
             Destroy(gameObject);
         }
+      
     }
 }

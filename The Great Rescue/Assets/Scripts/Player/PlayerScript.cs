@@ -14,7 +14,7 @@ public class PlayerScript : MonoBehaviour
 
     void Die()
     {
-        
+
         Destroy(gameObject);
     }
 
@@ -25,18 +25,19 @@ public class PlayerScript : MonoBehaviour
 
     void Update() //Calls functions once per frame
     {
+
         if (health == 0)
         {
-            
+
             m_MyAudioSource.Play();
             Die();
-            
-            
+
+
         }
         GetInput();
         PlayerMovement();
     }
-  
+
 
     private void GetInput()
     {
@@ -63,7 +64,7 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
-    public void PlayerMovement() 
+    public void PlayerMovement()
     {
         //This will move the player according to their direction * speed * time in seconds
         transform.Translate(direction * speed * Time.deltaTime);
@@ -74,20 +75,24 @@ public class PlayerScript : MonoBehaviour
         {
             HealthScore.HealthValue -= 1;
             m_MyAudioSource.Play();
-            health--;} 
+            health--;
+        }
 
         //checks if colliding with Enemy Bullets
         if (col.gameObject.name == "EnemyBulletGO(Clone)")
         {
             HealthScore.HealthValue -= 1;
             m_MyAudioSource.Play();
-            health--;}
+            health--;
+        }
         //checks is colliding with enemy hurtbox
-        if (col.gameObject.name == "Hurtbox")
+        if (col.gameObject.tag == "pointy")
         {
             HealthScore.HealthValue -= 1;
             m_MyAudioSource.Play();
             health--;
+           
         }
     }
+
 }

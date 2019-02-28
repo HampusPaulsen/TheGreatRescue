@@ -9,6 +9,7 @@ TagManager:
   - Boundary
   - PlayerBullet
   - PChealth
+  - pointy
   layers:
   - Default
   - TransparentFX
