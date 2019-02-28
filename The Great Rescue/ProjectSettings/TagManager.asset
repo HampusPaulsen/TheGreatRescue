@@ -8,6 +8,7 @@ TagManager:
   - RangedEnemy1
   - Boundary
   - PlayerBullet
+  - PChealth
   layers:
   - Default
   - TransparentFX

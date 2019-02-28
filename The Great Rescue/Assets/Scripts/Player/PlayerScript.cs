@@ -82,5 +82,12 @@ public class PlayerScript : MonoBehaviour
             HealthScore.HealthValue -= 1;
             m_MyAudioSource.Play();
             health--;}
+        //checks is colliding with enemy hurtbox
+        if (col.gameObject.name == "Hurtbox")
+        {
+            HealthScore.HealthValue -= 1;
+            m_MyAudioSource.Play();
+            health--;
+        }
     }
 }
