@@ -93,6 +93,17 @@ public class PlayerScript : MonoBehaviour
             health--;
            
         }
+    
+    }
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "laser")
+        {
+            HealthScore.HealthValue -= 1;
+            m_MyAudioSource.Play();
+            health--;
+
+        }
     }
 
 }
