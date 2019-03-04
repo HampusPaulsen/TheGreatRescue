@@ -48,6 +48,7 @@ public class RangedEnemy2 : MonoBehaviour
                 PowerUp.transform.position = gameObject.transform.position;
             }
             ScoreScript.ScoreValue += 1;
+            BodyCount.Troll += 1;
             Destroy(gameObject);
         }
 

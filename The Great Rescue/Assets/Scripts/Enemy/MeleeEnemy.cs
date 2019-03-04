@@ -45,6 +45,7 @@ public class MeleeEnemy : MonoBehaviour
                 PowerUp.transform.position = gameObject.transform.position;
             }
             ScoreScript.ScoreValue += 1;
+            BodyCount.Orc += 1;
             Destroy(gameObject);
         }
         GameObject player = GameObject.Find("PlayerCharacter");

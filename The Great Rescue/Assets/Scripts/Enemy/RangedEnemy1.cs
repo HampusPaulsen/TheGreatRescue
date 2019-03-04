@@ -48,6 +48,7 @@ public class RangedEnemy1 : MonoBehaviour
                 PowerUp.transform.position = gameObject.transform.position;
             }
             ScoreScript.ScoreValue += 1;
+            BodyCount.Goblin++;
             Destroy(gameObject);
         }
             

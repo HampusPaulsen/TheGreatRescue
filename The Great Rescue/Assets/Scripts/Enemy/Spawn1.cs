@@ -6,7 +6,7 @@ public class Spawn1 : MonoBehaviour
 {
     [SerializeField]
     //private int loc = 1;
-    public GameObject RangedEnemy1;
+    public GameObject Enemy;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +23,7 @@ public class Spawn1 : MonoBehaviour
     {
        // Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(1, 0));
      //   Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
-        GameObject anEnemy = (GameObject)Instantiate(RangedEnemy1);
+        GameObject anEnemy = (GameObject)Instantiate(Enemy);
         anEnemy.transform.position = gameObject.transform.position;
 
     
