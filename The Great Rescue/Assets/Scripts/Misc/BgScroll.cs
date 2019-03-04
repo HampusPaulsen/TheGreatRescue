@@ -22,7 +22,7 @@ public class BgScroll : MonoBehaviour
     {
         Vector3 orgpos1 = BG1.transform.position;
  
-        targpos1.x = -44;
+        targpos1.x = -180;
     
         MoveBg = false;
   
@@ -38,7 +38,7 @@ public class BgScroll : MonoBehaviour
             BG1.transform.position = Vector2.MoveTowards(BG1.transform.position, targpos1, scrollSpeed * Time.deltaTime);
             Vector3 checkpos1 = BG1.transform.position;
         
-            if (checkpos1.x == -44)
+            if (checkpos1.x == -180)
             {
                 print("false");
            

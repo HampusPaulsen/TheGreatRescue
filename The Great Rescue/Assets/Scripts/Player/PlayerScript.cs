@@ -11,21 +11,26 @@ public class PlayerScript : MonoBehaviour
     private float speed = 3.0f; //Change this to change the speed of the player character
 
     private Vector2 direction;
-
+    private Vector2 orgpos;
     void Die()
     {
 
         Destroy(gameObject);
     }
 
-    void Start() //Empty, for now
+    void Start() 
     {
+        orgpos.x = -64;
+        orgpos.y = -2;
         m_MyAudioSource = GetComponent<AudioSource>();
     }
 
     void Update() //Calls functions once per frame
     {
-
+        if (health > 5)
+        {
+            health = 5;
+        }
         if (health == 0)
         {
 
@@ -34,8 +39,15 @@ public class PlayerScript : MonoBehaviour
 
 
         }
-        GetInput();
-        PlayerMovement();
+        if (BgScroll.MoveBg == false)
+        {
+            GetInput();
+            PlayerMovement();
+        }
+        if (BgScroll.MoveBg == true)
+        {
+            gameObject.transform.position = Vector2.MoveTowards(gameObject.transform.position, orgpos, 70 * Time.deltaTime);
+        }
     }
 
 

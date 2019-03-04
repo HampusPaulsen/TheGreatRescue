@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerBullet : MonoBehaviour
 {
     [SerializeField]
-    private float bulletVelocity = 10;
+    public float bulletVelocity;
 
     void Update()
     {

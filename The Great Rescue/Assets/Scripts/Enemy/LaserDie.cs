@@ -15,7 +15,18 @@ public class LaserDie : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (BgScroll.MoveBg == true)
+        {
+            Destroy(gameObject);
+        }
 
+        if (GameObject.Find("PlayerCharacter") == null)
+        {
+
+
+
+            Destroy(gameObject);
+        }
         time -= Time.deltaTime;
 
         if (time <= 0.0f)

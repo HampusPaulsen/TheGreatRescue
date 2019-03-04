@@ -20,13 +20,15 @@ public class EnemyGun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        time += Time.deltaTime;
-        if (time >= firerate)
+        if (BgScroll.MoveBg == false)
         {
-            time = 0;
-            Invoke("FireEnemyBullet", 2f);
-        }               
-          
+            time += Time.deltaTime;
+            if (time >= firerate)
+            {
+                time = 0;
+                Invoke("FireEnemyBullet", 2f);
+            }
+        }
 
     }
    

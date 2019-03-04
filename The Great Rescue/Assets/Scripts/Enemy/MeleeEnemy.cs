@@ -37,7 +37,7 @@ public class MeleeEnemy : MonoBehaviour
 
             Destroy(gameObject);
         }
-        if (health == 0)
+        if (health == 0 && health < 5)
         {
             if (Random.Range(1, 13) == 3)
             {

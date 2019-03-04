@@ -23,9 +23,10 @@ public class LaserBox : MonoBehaviour
         {
             
         
-            GameObject hurtboxob = (GameObject)Instantiate(hurtbox);
+            var hurtboxob = (GameObject)Instantiate(hurtbox);
             hurtboxob.transform.position = gameObject.transform.position;
-           
+            hurtboxob.transform.parent = gameObject.transform;
+
             timeactual = time;
         }
 

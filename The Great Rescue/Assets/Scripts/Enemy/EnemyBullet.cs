@@ -28,6 +28,17 @@ public class EnemyBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (BgScroll.MoveBg == true)
+        {
+            Destroy(gameObject);
+        }
+        if (GameObject.Find("PlayerCharacter") == null)
+        {
+
+
+
+            Destroy(gameObject);
+        }
         if (isready)
         {
             Vector2 position = transform.position;
