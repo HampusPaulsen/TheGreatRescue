@@ -39,15 +39,15 @@ public class PlayerScript : MonoBehaviour
 
 
         }
-        if (BgScroll.MoveBg == false)
-        {
-            GetInput();
-            PlayerMovement();
-        }
-        if (BgScroll.MoveBg == true)
-        {
-            gameObject.transform.position = Vector2.MoveTowards(gameObject.transform.position, orgpos, 70 * Time.deltaTime);
-        }
+        //if (BgScroll.MoveBg == false)
+        //{
+      GetInput();
+     PlayerMovement();
+        //}
+        //if (BgScroll.MoveBg == true)
+       // {
+     //gameObject.transform.position = Vector2.MoveTowards(gameObject.transform.position, orgpos, 70 * Time.deltaTime);
+        //}
     }
 
 

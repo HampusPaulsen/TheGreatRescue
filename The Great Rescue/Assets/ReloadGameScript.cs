@@ -28,5 +28,18 @@ public class ReloadGameScript : MonoBehaviour
             //ScoreScript.ScoreValue = 0;
             //SceneManager.LoadScene(SceneManager.GetActiveScene().name); // loads current scene
         }
+
+        if (Input.GetKeyDown("f1"))
+        {
+            ScoreScript.ScoreValue = 0;
+            BodyCount.Goblin = 0;
+            BodyCount.Troll = 0;
+            BodyCount.Orc = 0;
+
+
+            PlayerScript.health = 5;
+            HealthScore.HealthValue = 5;
+            UnityEngine.SceneManagement.SceneManager.LoadScene("0. StartScene");
+        }
     }
 }

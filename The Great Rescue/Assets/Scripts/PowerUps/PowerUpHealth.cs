@@ -7,11 +7,14 @@ public class PowerUpHealth : MonoBehaviour
     
     private Vector2 target;
     public float speed;
+    
+
 
     void Start()
     {
-        target.x = -64;
-        target.y = -2;
+        GameObject player = GameObject.Find("PlayerCharacter");
+
+        target = player.transform.position;
     }
     void Update()
     {
@@ -24,7 +27,7 @@ public class PowerUpHealth : MonoBehaviour
         }
         if (BgScroll.MoveBg == true)
         {
-            transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position,target , speed * Time.deltaTime);
         }
     }
     void OnCollisionEnter2D(Collision2D col)
