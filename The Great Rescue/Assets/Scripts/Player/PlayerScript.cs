@@ -10,6 +10,8 @@ public class PlayerScript : MonoBehaviour
     [SerializeField]
     private float speed = 3.0f; //Change this to change the speed of the player character
 
+    Transform PlayerManager;
+
     private Vector2 direction;
     private Vector2 orgpos;
     void Die()
@@ -23,6 +25,11 @@ public class PlayerScript : MonoBehaviour
         orgpos.x = -64;
         orgpos.y = -2;
         m_MyAudioSource = GetComponent<AudioSource>();
+    }
+
+    void Awake()
+    {
+        PlayerManager = transform.Find("PlayerManager");
     }
 
     void Update() //Calls functions once per frame

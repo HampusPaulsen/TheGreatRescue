@@ -19,6 +19,7 @@ public class PlayerGun : MonoBehaviour
     float fireTimer = 0;
     float time;
     public float firerate;
+
     void Start()
     {
         m_MyAudioSource = GetComponent<AudioSource>();
@@ -54,18 +55,20 @@ public class PlayerGun : MonoBehaviour
                  }
              }*/
             time += Time.deltaTime;
-            if (Input.GetKeyUp(KeyCode.Space) && time >= firerate)
+            if (Input.GetKeyDown(KeyCode.Space) && time >= firerate)
             {
                 time = 0;
                 m_MyAudioSource.Play();
                 Shoot();
             }
-
-
-
-
-
-
+        }
+        //Raycasting
+        Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        difference.Normalize();
+        float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
+        if (rotZ > -30 && rotZ < 30)
+        {
+            transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotZ);
         }
     }
 
