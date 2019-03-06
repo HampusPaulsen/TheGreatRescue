@@ -61,6 +61,20 @@ public class PlayerGun : MonoBehaviour
                 m_MyAudioSource.Play();
                 Shoot();
             }
+
+            if (Input.GetKeyDown(KeyCode.Mouse0) && time >= firerate)
+            {
+                time = 0;
+                m_MyAudioSource.Play();
+                Shoot();
+            }
+
+            if (Input.GetKeyDown(KeyCode.Mouse1) && time >= firerate)
+            {
+                time = 0;
+                m_MyAudioSource.Play();
+                Shoot();
+            }
         }
         //Raycasting
         Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
