@@ -49,6 +49,7 @@ public class RangedEnemy2 : MonoBehaviour
             }
             ScoreScript.ScoreValue += 1;
             BodyCount.Troll += 1;
+            gameObject.SendMessageUpwards("Respawn");
             Destroy(gameObject);
         }
 

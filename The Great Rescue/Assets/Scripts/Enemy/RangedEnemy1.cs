@@ -40,16 +40,18 @@ public class RangedEnemy1 : MonoBehaviour
            
             Destroy(gameObject);
         }
-        if (health == 0 && health <5)
+        if (health == 0)
         {
-            if(Random.Range(1,13)==3)
+            if(Random.Range(1,13)==3 && PlayerScript.health<5)
             {
                 PowerUp = Instantiate(PowerUp) as GameObject;
                 PowerUp.transform.position = gameObject.transform.position;
             }
             ScoreScript.ScoreValue += 1;
             BodyCount.Goblin++;
+            gameObject.SendMessageUpwards("Respawn");
             Destroy(gameObject);
+           
         }
             
         transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
