@@ -6,7 +6,7 @@ public class PlayerScript : MonoBehaviour
 {
     AudioSource m_MyAudioSource;
     public static int health = 5;
-    public static bool pierceshot = true;
+    public static bool pierceshot = false;
 
     public float piercingtime = 5f;
     private float timeelapsed = 0;
