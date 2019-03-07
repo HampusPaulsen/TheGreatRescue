@@ -11,7 +11,6 @@ public class Shrek : MonoBehaviour
 
     public float time = 5f;
     private float timeelapsed=0;
-    private float timeactual;
     AudioSource m_MyAudioSource;
 
 
@@ -39,9 +38,9 @@ public class Shrek : MonoBehaviour
         { Destroy(gameObject); }
 
 
-        transform.position = Vector2.MoveTowards(transform.position, new Vector2(-100, transform.position.y), speed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, new Vector2(-200, transform.position.y), speed * Time.deltaTime);
         timeelapsed += Time.deltaTime;
-        if(timeelapsed == time)
+        if(timeelapsed >= time)
         {
             Destroy(gameObject);
         }

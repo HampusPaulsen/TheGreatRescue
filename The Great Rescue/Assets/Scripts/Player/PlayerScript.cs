@@ -6,6 +6,10 @@ public class PlayerScript : MonoBehaviour
 {
     AudioSource m_MyAudioSource;
     public static int health = 5;
+    public static bool pierceshot = true;
+
+    public float piercingtime = 5f;
+    private float timeelapsed = 0;
 
     [SerializeField]
     private float speed = 3.0f; //Change this to change the speed of the player character
@@ -34,6 +38,18 @@ public class PlayerScript : MonoBehaviour
 
     void Update() //Calls functions once per frame
     {
+        if (pierceshot == true)
+        {
+            PlayerBullet.pierce = true;
+            timeelapsed += Time.deltaTime;
+            if (timeelapsed >= piercingtime)
+            {
+                pierceshot = false;
+                PlayerBullet.pierce = false;
+                timeelapsed = 0;
+            }
+            
+        }
         if (health > 5)
         {
             health = 5;
@@ -90,15 +106,21 @@ public class PlayerScript : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D col)
     {
+        //checks if colliding with enemies
         if (col.gameObject.tag == "RangedEnemy1")
         {
             HealthScore.HealthValue -= 1;
             m_MyAudioSource.Play();
             health--;
         }
+        //checks if colliding with piercing powerup
+        if (col.gameObject.tag == "piercing")
+        {
+            pierceshot = true;
+        }
 
-        //checks if colliding with Enemy Bullets
-        if (col.gameObject.name == "EnemyBulletGO(Clone)")
+            //checks if colliding with Enemy Bullets
+            if (col.gameObject.name == "EnemyBulletGO(Clone)")
         {
             HealthScore.HealthValue -= 1;
             m_MyAudioSource.Play();

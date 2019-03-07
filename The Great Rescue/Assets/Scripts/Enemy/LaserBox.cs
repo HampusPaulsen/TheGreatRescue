@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class LaserBox : MonoBehaviour
 {
+    AudioSource m_MyAudioSource;
     public GameObject hurtbox;
-    public float time = 5.0f;
+    public float time = 4.0f;
     private float timeactual;
 
     // Start is called before the first frame update
     void Start()
     {
+       
         timeactual = time;
     }
 
@@ -18,11 +20,20 @@ public class LaserBox : MonoBehaviour
     void Update()
     {
         timeactual -= Time.deltaTime;
-
-        if (timeactual <= 0.0f)
+        
+       
+        if (timeactual <= 2.0f)
         {
             
+            gameObject.transform.GetChild(0).gameObject.SetActive(true);
+           
+        }
         
+      
+        if (timeactual <= 0.0f)
+        {
+           
+            gameObject.transform.GetChild(0).gameObject.SetActive(false);
             var hurtboxob = (GameObject)Instantiate(hurtbox);
             hurtboxob.transform.position = gameObject.transform.position;
             hurtboxob.transform.parent = gameObject.transform;
