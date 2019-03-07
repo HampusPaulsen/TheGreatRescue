@@ -11,6 +11,7 @@ TagManager:
   - PChealth
   - pointy
   - laser
+  - piercing
   layers:
   - Default
   - TransparentFX
