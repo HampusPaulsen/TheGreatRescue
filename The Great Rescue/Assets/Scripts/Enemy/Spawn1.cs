@@ -8,7 +8,7 @@ public class Spawn1 : MonoBehaviour
     //private int loc = 1;
     public GameObject Enemy;
     public int spawncap = 0;
-    int spawned= 0;
+    int spawned= 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +23,7 @@ public class Spawn1 : MonoBehaviour
     }
     void Respawn()
     {
-        while (spawncap > spawned)
+        if (spawncap >= spawned)
         {
             spawned++;
             SpawnEnemy1();

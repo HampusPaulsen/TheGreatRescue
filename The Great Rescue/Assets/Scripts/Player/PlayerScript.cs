@@ -90,7 +90,7 @@ public class PlayerScript : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.name == "RangedEnemy1(Clone)")
+        if (col.gameObject.tag == "RangedEnemy1")
         {
             HealthScore.HealthValue -= 1;
             m_MyAudioSource.Play();
@@ -122,6 +122,12 @@ public class PlayerScript : MonoBehaviour
             m_MyAudioSource.Play();
             health--;
 
+        }
+        if (col.gameObject.tag == "RangedEnemy1")
+        {
+            HealthScore.HealthValue -= 1;
+            m_MyAudioSource.Play();
+            health--;
         }
     }
 
