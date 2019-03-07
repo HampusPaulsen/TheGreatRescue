@@ -46,6 +46,7 @@ public class MeleeEnemy : MonoBehaviour
             }
             ScoreScript.ScoreValue += 1;
             BodyCount.Orc += 1;
+            gameObject.SendMessageUpwards("Respawn");
             Destroy(gameObject);
         }
         GameObject player = GameObject.Find("PlayerCharacter");
