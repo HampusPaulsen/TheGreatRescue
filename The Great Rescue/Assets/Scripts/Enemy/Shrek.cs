@@ -10,7 +10,9 @@ public class Shrek : MonoBehaviour
     private float direction;
 
     public float time = 5f;
+    private float timeelapsed=0;
     private float timeactual;
+    AudioSource m_MyAudioSource;
 
 
 
@@ -18,22 +20,31 @@ public class Shrek : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        m_MyAudioSource = GetComponent<AudioSource>();
+        m_MyAudioSource.Play();
         position = gameObject.transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (GameObject.Find("PlayerCharacter") == null)
+        {
+
+
+
+            Destroy(gameObject);
+        }
+        if (BgScroll.MoveBg == true)
+        { Destroy(gameObject); }
 
 
         transform.position = Vector2.MoveTowards(transform.position, new Vector2(-100, transform.position.y), speed * Time.deltaTime);
-      
-    }
-    void OnBecameInvisible()
-    {
-
-        Destroy(gameObject);
+        timeelapsed += Time.deltaTime;
+        if(timeelapsed == time)
+        {
+            Destroy(gameObject);
+        }
     }
 
 }

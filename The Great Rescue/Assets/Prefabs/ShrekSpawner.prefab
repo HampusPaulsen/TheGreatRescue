@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8686832424286926341}
-  - component: {fileID: 8686832424286926340}
+  - component: {fileID: 4711942022535528518}
   m_Layer: 0
   m_Name: ShrekSpawner
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8686832424286926340
+--- !u!114 &4711942022535528518
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,9 +40,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8686832424286926339}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a757b776d25b0b94e94fd9fd8f4f28ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 1525b3f17eb39254ca507d9afed91ec4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Shrek: {fileID: 2031721967531603482, guid: 73545200c6dcacd45ad77d81f00a32e3, type: 3}
   spawndelay: 5
-  maxspawn: 1
+  TimeElapsed: 0
