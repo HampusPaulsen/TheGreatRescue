@@ -14,7 +14,7 @@ public class ShrekSpawn : MonoBehaviour
     void Start()
     {
         TimeElapsed = 0.0f;
-        StartCoroutine("spawner");
+        //StartCoroutine("spawner");
     }
 
     // Update is called once per frame
