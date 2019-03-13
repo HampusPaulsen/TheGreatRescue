@@ -35,6 +35,8 @@ public class BgScroll : MonoBehaviour
     {
         if (MoveBg == true)
         {
+            ScreenShake.shakeDuration = 0;
+            BgScrollPara.MoveBgPara = true;
             BG1.transform.position = Vector2.MoveTowards(BG1.transform.position, targpos1, scrollSpeed * Time.deltaTime);
             Vector3 checkpos1 = BG1.transform.position;
         
@@ -44,8 +46,9 @@ public class BgScroll : MonoBehaviour
            
                 
                 BG1.transform.position = orgpos1;
-             
+                BgScrollPara.MoveBgPara = false;
                 MoveBg = false;
+
             }
         }
     }
