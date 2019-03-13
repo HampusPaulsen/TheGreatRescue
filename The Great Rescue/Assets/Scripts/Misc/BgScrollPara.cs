@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BgScroll : MonoBehaviour
+public class BgScrollPara : MonoBehaviour
 {
     public float scrollSpeed = 10f;
 
@@ -16,7 +16,7 @@ public class BgScroll : MonoBehaviour
 
     public GameObject BG1;
 
-    public static bool MoveBg;
+    public static bool MoveBgPara;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +24,7 @@ public class BgScroll : MonoBehaviour
  
         targpos1.x = -180;
     
-        MoveBg = false;
+        MoveBgPara = false;
   
 
         
@@ -33,9 +33,8 @@ public class BgScroll : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (MoveBg == true)
+        if (MoveBgPara == true)
         {
-            BgScrollPara.MoveBgPara = true;
             BG1.transform.position = Vector2.MoveTowards(BG1.transform.position, targpos1, scrollSpeed * Time.deltaTime);
             Vector3 checkpos1 = BG1.transform.position;
         
@@ -45,9 +44,8 @@ public class BgScroll : MonoBehaviour
            
                 
                 BG1.transform.position = orgpos1;
-                BgScrollPara.MoveBgPara = false;
-                MoveBg = false;
-
+             
+                
             }
         }
     }
