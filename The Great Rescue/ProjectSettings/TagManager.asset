@@ -12,6 +12,8 @@ TagManager:
   - pointy
   - laser
   - piercing
+  - EnemyBullet
+  - multi
   layers:
   - Default
   - TransparentFX
@@ -24,7 +26,7 @@ TagManager:
   - Background
   - Enemy
   - Powerup
-  - 
+  - Parallax
   - 
   - 
   - 

@@ -2,13 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PiercingPowerUp : MonoBehaviour
+public class MultishotPowerUp : MonoBehaviour
 {
-
     private Vector2 target;
     public float speed;
-
-
 
     void Start()
     {
@@ -16,6 +13,7 @@ public class PiercingPowerUp : MonoBehaviour
 
         target = player.transform.position;
     }
+
     void Update()
     {
         if (GameObject.Find("PlayerCharacter") == null)
@@ -27,13 +25,12 @@ public class PiercingPowerUp : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
         }
     }
+
     void OnCollisionEnter2D(Collision2D col)
     {
-
         //checks if colliding with something named PlayerCharacter
         if (col.gameObject.name == "PlayerCharacter")
         {
-            
             Destroy(gameObject);
         }
     }
