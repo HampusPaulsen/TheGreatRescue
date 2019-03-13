@@ -7,22 +7,29 @@ public class ShrekSpawn : MonoBehaviour
     public GameObject Shrek;
     public float spawndelay = 5.0f;
     public float TimeElapsed;
+    private int size=0;
+    public int cap;
+
     // Start is called before the first frame update
     void Start()
     {
         TimeElapsed = 0.0f;
+        StartCoroutine("spawner");
     }
 
     // Update is called once per frame
     void Update()
     {
-       
-
-    
-        timer();
-       
 
 
+
+        if (size < cap)
+        {
+
+            timer();
+
+            
+        }
 
 
     }
@@ -39,11 +46,25 @@ public class ShrekSpawn : MonoBehaviour
     void timer()
     {
         TimeElapsed += Time.deltaTime;
-
+       
         if (TimeElapsed >= spawndelay)
         {
             SpawnEnemy();
             TimeElapsed = 0f;
+            size++;
         }
     }
+
+   /* IEnumerator spawner()
+    {
+  
+        while(size < cap)
+        {
+
+
+            timer();
+            size++;
+            yield return null;
+        }
+    }*/
 }
