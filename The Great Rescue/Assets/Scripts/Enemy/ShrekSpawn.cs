@@ -12,7 +12,10 @@ public class ShrekSpawn : MonoBehaviour
     {
         TimeElapsed = 0.0f;
 <<<<<<< HEAD
+<<<<<<< HEAD
         StartCoroutine("spawner");
+=======
+>>>>>>> parent of d3803b5... SplitShot++
 =======
 >>>>>>> parent of d3803b5... SplitShot++
     }

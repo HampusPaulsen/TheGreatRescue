@@ -286,7 +286,11 @@ RectTransform:
   - {fileID: 361262403}
   m_Father: {fileID: 387853112}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 2
+=======
+  m_RootOrder: 4
+>>>>>>> parent of d3803b5... SplitShot++
 =======
   m_RootOrder: 4
 >>>>>>> parent of d3803b5... SplitShot++
@@ -788,7 +792,10 @@ RectTransform:
   m_Children:
   - {fileID: 1647580255}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of d3803b5... SplitShot++
   - {fileID: 519813534}
   - {fileID: 198837330}
 >>>>>>> parent of d3803b5... SplitShot++
@@ -1043,6 +1050,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1.4875, y: 0.925, z: 1}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Children:
   - {fileID: 1475159749}
   - {fileID: 259075593}
@@ -1128,6 +1136,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+=======
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of d3803b5... SplitShot++
 =======
   m_Children: []
   m_Father: {fileID: 0}
@@ -1405,7 +1419,11 @@ RectTransform:
   - {fileID: 1958747943}
   m_Father: {fileID: 387853112}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 1
+=======
+  m_RootOrder: 3
+>>>>>>> parent of d3803b5... SplitShot++
 =======
   m_RootOrder: 3
 >>>>>>> parent of d3803b5... SplitShot++
