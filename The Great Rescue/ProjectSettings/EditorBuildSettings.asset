@@ -11,9 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/2. Comic.unity
     guid: fc05ca4e9f519be4fb869d8f2ae1ae41
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/1. HowToPlayScene.unity
+    guid: af9ba1ff62ba9cf44959d5ff8c3e673c
   - enabled: 1
     path: Assets/Scenes/3. MainScene.unity
     guid: 53bc2b99bcd375842b99d0ff9604941c
