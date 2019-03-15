@@ -341,7 +341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f5aca26e3c262c49be0a859683dafc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  piercingtime: 15
+  piercingtime: 60
   speed: 60
 --- !u!212 &53947343
 SpriteRenderer:
@@ -2463,7 +2463,7 @@ GameObject:
   m_Component:
   - component: {fileID: 424242312}
   - component: {fileID: 424242311}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: BgPara3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2526,7 +2526,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 424242310}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -2.5}
+  m_LocalPosition: {x: 0, y: 0, z: -3}
   m_LocalScale: {x: 9.5, y: 9.5, z: 0}
   m_Children:
   - {fileID: 1839942315}
@@ -2749,7 +2749,7 @@ GameObject:
   m_Component:
   - component: {fileID: 439322205}
   - component: {fileID: 439322206}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: BgLayer2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2828,7 +2828,7 @@ GameObject:
   m_Component:
   - component: {fileID: 465335667}
   - component: {fileID: 465335668}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: BgLayer2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2885,7 +2885,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: d491559f67cf7034e9016cd577c8b290, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5275,7 +5275,7 @@ GameObject:
   m_Component:
   - component: {fileID: 994304658}
   - component: {fileID: 994304657}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: BgPara2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5338,7 +5338,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 994304656}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -2.5}
+  m_LocalPosition: {x: 0, y: 0, z: -2}
   m_LocalScale: {x: 9.5, y: 9.5, z: 0}
   m_Children:
   - {fileID: 465335667}
@@ -5670,7 +5670,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1126912708}
   - component: {fileID: 1126912707}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5733,7 +5733,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1126912706}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 9.5, y: 9.5, z: 1}
   m_Children:
   - {fileID: 1323809987}
@@ -5975,7 +5975,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1183101094}
   - component: {fileID: 1183101093}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: BgPara1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6038,7 +6038,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1183101092}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -2.5}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 9.5, y: 9.5, z: 0}
   m_Children:
   - {fileID: 439322205}
@@ -6825,7 +6825,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1323809987}
   - component: {fileID: 1323809989}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bgcomplete1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8715,7 +8715,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1839942315}
   - component: {fileID: 1839942316}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: BgLayer2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8772,7 +8772,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -3
   m_Sprite: {fileID: 21300000, guid: a7c52f787127d0f4c9672954ee4828a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

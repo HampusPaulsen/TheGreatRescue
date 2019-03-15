@@ -8,6 +8,11 @@ public class PlayerBullet : MonoBehaviour
     public float bulletVelocity;
     public static bool pierce = false;
     private int pierced = 0;
+    AudioSource m_MyAudioSource;
+    void Start()
+    {
+        m_MyAudioSource = GetComponent<AudioSource>();
+    }
 
     void Update()
     {
@@ -20,6 +25,7 @@ public class PlayerBullet : MonoBehaviour
         
         if (col.gameObject.tag == "RangedEnemy1")
         {
+            m_MyAudioSource.Play();
             pierced++;
             if(pierce ==false)
             { Destroy(gameObject); }
