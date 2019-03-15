@@ -14,7 +14,10 @@ public class ShrekSpawn : MonoBehaviour
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         StartCoroutine("spawner");
+=======
+>>>>>>> parent of d3803b5... SplitShot++
 =======
 >>>>>>> parent of d3803b5... SplitShot++
 =======
