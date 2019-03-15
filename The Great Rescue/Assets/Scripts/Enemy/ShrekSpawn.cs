@@ -14,7 +14,7 @@ public class ShrekSpawn : MonoBehaviour
     void Start()
     {
         TimeElapsed = 0.0f;
-        //StartCoroutine("spawner");
+        StartCoroutine("spawner");
     }
 
     // Update is called once per frame
@@ -35,7 +35,6 @@ public class ShrekSpawn : MonoBehaviour
     }
     void SpawnEnemy()
     {
-        ScreenShake.shakeDuration = 2;
         Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(1, 0));
         Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
         GameObject anEnemy = (GameObject)Instantiate(Shrek);
@@ -50,7 +49,6 @@ public class ShrekSpawn : MonoBehaviour
        
         if (TimeElapsed >= spawndelay)
         {
-            
             SpawnEnemy();
             TimeElapsed = 0f;
             size++;

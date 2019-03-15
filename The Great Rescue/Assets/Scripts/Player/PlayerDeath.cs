@@ -16,11 +16,15 @@ public class PlayerDeath : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameObject.Find("PlayerCharacter") == null)
+        if (GameObject.Find("PlayerCharacter") != null)
         {
             
             m_MyAudioSource.Play();
             
         }
+
+
+
+
     }
 }

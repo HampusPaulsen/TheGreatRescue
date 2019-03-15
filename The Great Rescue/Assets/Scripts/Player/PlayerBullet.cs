@@ -7,7 +7,6 @@ public class PlayerBullet : MonoBehaviour
     [SerializeField]
     public float bulletVelocity;
     public static bool pierce = false;
-    private int pierced = 0;
 
     void Update()
     {
@@ -20,13 +19,8 @@ public class PlayerBullet : MonoBehaviour
         
         if (col.gameObject.tag == "RangedEnemy1")
         {
-            pierced++;
             if(pierce ==false)
             { Destroy(gameObject); }
-            if (pierced >= 2)
-            {
-                ScreenShake.shakeDuration = 0.5f;
-            }
         }
       
     }

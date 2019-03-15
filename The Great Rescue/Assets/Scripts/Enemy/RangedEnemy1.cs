@@ -40,7 +40,7 @@ public class RangedEnemy1 : MonoBehaviour
            
             Destroy(gameObject);
         }
-        if (health <= 0)
+        if (health == 0)
         {
             if(Random.Range(1,13)==3 && PlayerScript.health<5)
             {
