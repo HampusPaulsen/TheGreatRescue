@@ -11,6 +11,10 @@ public class ShrekSpawn : MonoBehaviour
     void Start()
     {
         TimeElapsed = 0.0f;
+<<<<<<< HEAD
+        StartCoroutine("spawner");
+=======
+>>>>>>> parent of d3803b5... SplitShot++
     }
 
     // Update is called once per frame
