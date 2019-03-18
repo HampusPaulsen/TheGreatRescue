@@ -14,11 +14,7 @@ public class PlayerGun : MonoBehaviour
     [SerializeField]
     private Transform BulletPrefab;
 
-    public static bool multi = false;
-
     Transform firePoint;
-    Transform firePoint2;
-    Transform firePoint3;
 
     float fireTimer = 0;
     float time;
@@ -34,14 +30,30 @@ public class PlayerGun : MonoBehaviour
     {
         //Remember to add an empty child to the gun called "FirePoint"
         firePoint = transform.Find("FirePoint");
-        firePoint2 = transform.Find("FirePoint2");
-        firePoint3 = transform.Find("FirePoint3");
     }
 
     void Update()
     {
         if (BgScroll.MoveBg == false)
         {
+            /* if (firerate == 0)
+             {
+                 if (Input.GetKeyUp(KeyCode.Space))
+                 {
+                     Shoot();
+                 }
+                 else
+
+
+
+                 {
+                     if (Input.GetKeyUp(KeyCode.Space) && Time.time > fireTimer)
+                     {
+                         fireTimer = Time.time + 1 / firerate;
+                         Shoot();
+                     }
+                 }
+             }*/
             time += Time.deltaTime;
             if (Input.GetKeyDown(KeyCode.Space) && time >= firerate)
             {
@@ -86,15 +98,6 @@ public class PlayerGun : MonoBehaviour
 
     void Effect()
     {
-        if (multi == true)
-        {
-            Instantiate(BulletPrefab, firePoint.position, firePoint.rotation);
-            Instantiate(BulletPrefab, firePoint.position, firePoint2.rotation);
-            Instantiate(BulletPrefab, firePoint.position, firePoint3.rotation);
-        }
-        else
-        {
-            Instantiate(BulletPrefab, firePoint.position, firePoint.rotation);
-        }
+        Instantiate(BulletPrefab, firePoint.position, firePoint.rotation);
     }
 }

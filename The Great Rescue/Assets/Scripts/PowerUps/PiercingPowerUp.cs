@@ -20,6 +20,9 @@ public class PiercingPowerUp : MonoBehaviour
     {
         if (GameObject.Find("PlayerCharacter") == null)
         {
+
+
+
             Destroy(gameObject);
         }
         if (BgScroll.MoveBg == true)
