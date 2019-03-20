@@ -7,7 +7,7 @@ public class PiercingIcon : MonoBehaviour
 {
   
     Text Piercing;
-
+    public Renderer Rend1;
 
     // Start is called before the first frame update
     void Start()
@@ -20,11 +20,13 @@ public class PiercingIcon : MonoBehaviour
     {
         if (PlayerScript.pierceshot == true)
         {
-           Piercing.text = "PIERCING"; 
+            Rend1.enabled = true;
         }
+
         else
         {
-           Piercing.text = " ";
+            Rend1.enabled = false;
         }
+        
     }
 }
