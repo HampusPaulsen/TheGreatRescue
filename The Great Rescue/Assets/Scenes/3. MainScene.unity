@@ -342,6 +342,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piercingtime: 60
+  top: {fileID: 1861884041}
+  left: {fileID: 565536160}
+  right: {fileID: 1415941242}
+  bottom: {fileID: 1430688882}
   speed: 60
 --- !u!212 &53947343
 SpriteRenderer:
@@ -4032,7 +4036,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &624927440
 Transform:
   m_ObjectHideFlags: 0
@@ -4164,7 +4168,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &637723488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4727,7 +4731,7 @@ PrefabInstance:
     - target: {fileID: 8686832424286926339, guid: cfb72c400cc64f047bb87f4bd041e2b5,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8686832424286926341, guid: cfb72c400cc64f047bb87f4bd041e2b5,
         type: 3}
@@ -6242,7 +6246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9d40f3d0e28a24469e78d3a1622a709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy: {fileID: 0}
+  Enemy: {fileID: 4692872915829419329, guid: 86467ebc31cd46f45b7b1ba991c415d3, type: 3}
   spawncap: 0
 --- !u!4 &1096017384
 Transform:
@@ -6699,6 +6703,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ShrekSpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 8686832424286926339, guid: cfb72c400cc64f047bb87f4bd041e2b5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8686832424286926341, guid: cfb72c400cc64f047bb87f4bd041e2b5,
         type: 3}
@@ -7614,7 +7623,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1313199155
 Transform:
   m_ObjectHideFlags: 0
@@ -9609,8 +9618,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 197c1c47c2f1d8d41b3ab0fe06b232a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  G1: 3
-  O1: 0
+  G1: 0
+  O1: 1
   T1: 0
   G2: 6
   O2: 0
@@ -10242,7 +10251,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1861884041}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.69, y: 34.8, z: 0}
+  m_LocalPosition: {x: 5.69, y: 35, z: 0}
   m_LocalScale: {x: 80, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 1465168782}

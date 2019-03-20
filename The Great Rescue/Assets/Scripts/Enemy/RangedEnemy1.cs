@@ -5,7 +5,7 @@ using UnityEngine;
 public class RangedEnemy1 : MonoBehaviour
 {
 
-   
+    
     private Vector2 target;
     private Vector2 position;
     public float speed;
@@ -13,6 +13,7 @@ public class RangedEnemy1 : MonoBehaviour
     private float direction;
     public GameObject PowerUp;
     public GameObject targ;
+    public GameObject DeathSound;
 
     
    
@@ -23,8 +24,7 @@ public class RangedEnemy1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-        
+
         target = targ.transform.position;
         position = gameObject.transform.position;
 
@@ -50,6 +50,8 @@ public class RangedEnemy1 : MonoBehaviour
             ScoreScript.ScoreValue += 1;
             BodyCount.Goblin++;
             gameObject.SendMessageUpwards("Respawn");
+            DeathSound = Instantiate(DeathSound) as GameObject;
+            DeathSound.transform.position = gameObject.transform.position;
             Destroy(gameObject);
            
         }

@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class EnemyGun : MonoBehaviour
 {
+    AudioSource m_MyAudioSource;
     public GameObject EnemyBulletGO;
     float time;
     public float firerate;
@@ -14,7 +15,7 @@ public class EnemyGun : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        m_MyAudioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -26,6 +27,7 @@ public class EnemyGun : MonoBehaviour
             if (time >= firerate)
             {
                 time = 0;
+                m_MyAudioSource.Play();
                 Invoke("FireEnemyBullet", 2f);
             }
         }

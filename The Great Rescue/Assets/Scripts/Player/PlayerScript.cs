@@ -11,6 +11,17 @@ public class PlayerScript : MonoBehaviour
     public float piercingtime = 5f;
     private float timeelapsed = 0;
 
+    public GameObject top;
+    public GameObject left;
+    public GameObject right;
+    public GameObject bottom;
+
+    private Vector2 topb;
+    private Vector2 leftb;
+    private Vector2 rightb;
+    private Vector2 bottomb;
+    private Vector2 playerpos;
+
     [SerializeField]
     private float speed = 3.0f; //Change this to change the speed of the player character
 
@@ -26,6 +37,11 @@ public class PlayerScript : MonoBehaviour
 
     void Start() 
     {
+        topb = top.transform.position;
+        bottomb = bottom.transform.position;
+        rightb = right.transform.position;
+        leftb = left.transform.position;
+
         orgpos.x = -64;
         orgpos.y = -2;
         m_MyAudioSource = GetComponent<AudioSource>();
@@ -38,6 +54,7 @@ public class PlayerScript : MonoBehaviour
 
     void Update() //Calls functions once per frame
     {
+        playerpos = gameObject.transform.position;
         if (pierceshot == true)
         {
             PlayerBullet.pierce = true;
@@ -79,22 +96,25 @@ public class PlayerScript : MonoBehaviour
         direction = Vector2.zero;
 
         if (Input.GetKey(KeyCode.W))
-        {
+        { if(playerpos.y<=topb.y-12)
             direction += Vector2.up;
         }
 
         if (Input.GetKey(KeyCode.A))
         {
-            direction += Vector2.left;
+            if (playerpos.x >= leftb.x + 11)
+                direction += Vector2.left;
         }
 
         if (Input.GetKey(KeyCode.S))
         {
-            direction += Vector2.down;
+            if (playerpos.y >= bottomb.y + 15)
+                direction += Vector2.down;
         }
 
         if (Input.GetKey(KeyCode.D))
         {
+           if (playerpos.x <= rightb.x - 12)
             direction += Vector2.right;
         }
     }

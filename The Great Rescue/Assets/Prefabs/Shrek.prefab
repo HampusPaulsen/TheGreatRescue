@@ -157,7 +157,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1902f88eeadbfe546b7ec7401bc56dcb, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.508
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -248,11 +248,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1968058041280661146}
     m_Modifications:
-    - target: {fileID: 7446407326453378784, guid: 5c8495e7f84ceb64fbfbad3d475f7e04,
-        type: 3}
-      propertyPath: m_Name
-      value: DustEffect
-      objectReference: {fileID: 0}
     - target: {fileID: 7446407326453378787, guid: 5c8495e7f84ceb64fbfbad3d475f7e04,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -317,6 +312,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.72050035
+      objectReference: {fileID: 0}
+    - target: {fileID: 7446407326453378784, guid: 5c8495e7f84ceb64fbfbad3d475f7e04,
+        type: 3}
+      propertyPath: m_Name
+      value: DustEffect
       objectReference: {fileID: 0}
     - target: {fileID: 7446407326453378786, guid: 5c8495e7f84ceb64fbfbad3d475f7e04,
         type: 3}
