@@ -12,8 +12,9 @@ public class MeleeEnemy : MonoBehaviour
     public int health = 2;
     private float direction;
     public GameObject PowerUp;
- 
-   
+    public GameObject DeathSound;
+
+
 
 
 
@@ -47,11 +48,14 @@ public class MeleeEnemy : MonoBehaviour
             ScoreScript.ScoreValue += 1;
             BodyCount.Orc += 1;
             gameObject.SendMessageUpwards("Respawn");
+            DeathSound = Instantiate(DeathSound) as GameObject;
+            DeathSound.transform.position = gameObject.transform.position;
             Destroy(gameObject);
         }
         GameObject player = GameObject.Find("PlayerCharacter");
         target = player.transform.position;
         position = gameObject.transform.position;
+        if(target.x <= position.x -10||target.y>=position.y+20|| target.y <= position.y - 20||target.x>=position.x +10)
         transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
 
 

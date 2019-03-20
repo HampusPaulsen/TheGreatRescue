@@ -23,7 +23,7 @@ public class PlayerBullet : MonoBehaviour
     void OnCollisionEnter2D(Collision2D col)
     {
         
-        if (col.gameObject.tag == "RangedEnemy1")
+        if (col.gameObject.tag == "RangedEnemy1"|| col.gameObject.tag == "orc")
         {
             m_MyAudioSource.Play();
             pierced++;

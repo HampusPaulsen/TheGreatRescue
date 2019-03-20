@@ -13,6 +13,7 @@ public class RangedEnemy2 : MonoBehaviour
     private float direction;
     public GameObject PowerUp;
     public GameObject targ;
+    public GameObject DeathSound;
 
 
 
@@ -50,6 +51,8 @@ public class RangedEnemy2 : MonoBehaviour
             ScoreScript.ScoreValue += 1;
             BodyCount.Troll += 1;
             gameObject.SendMessageUpwards("Respawn");
+            DeathSound = Instantiate(DeathSound) as GameObject;
+            DeathSound.transform.position = gameObject.transform.position;
             Destroy(gameObject);
         }
 
