@@ -6,13 +6,14 @@ using UnityEngine.UI;
 public class PiercingIcon : MonoBehaviour
 {
   
-    Text Piercing;
+    
+    [SerializeField]
     public Renderer Rend1;
 
     // Start is called before the first frame update
     void Start()
     {
-        Piercing = GetComponent<Text>();
+       
     }
 
     // Update is called once per frame

@@ -71,7 +71,7 @@ public class PlayerScript : MonoBehaviour
         {
             health = 5;
         }
-        if (health == 0)
+        if (health <= 0)
         {
 
             m_MyAudioSource.Play();
