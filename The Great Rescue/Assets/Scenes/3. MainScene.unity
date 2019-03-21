@@ -157,6 +157,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &5649192
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,6 +204,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 254177672863403903, guid: 734e62066fac24c40aafcaf8f765d9e5, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &19916447
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,6 +251,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &39816590
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,6 +298,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &53947340
 GameObject:
   m_ObjectHideFlags: 0
@@ -1009,6 +1017,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &98357901
 GameObject:
   m_ObjectHideFlags: 0
@@ -1054,6 +1064,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!4 &102519342 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8686832424286926341, guid: cfb72c400cc64f047bb87f4bd041e2b5,
@@ -1481,6 +1493,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &262501424
 GameObject:
   m_ObjectHideFlags: 0
@@ -1526,6 +1540,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &268099681
 GameObject:
   m_ObjectHideFlags: 0
@@ -1774,6 +1790,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 1
+  delay: 0
 --- !u!1 &296247860
 GameObject:
   m_ObjectHideFlags: 0
@@ -2028,6 +2046,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!4 &319916279 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8686832424286926341, guid: cfb72c400cc64f047bb87f4bd041e2b5,
@@ -2079,6 +2099,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &332623697
 GameObject:
   m_ObjectHideFlags: 0
@@ -2124,6 +2146,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &343036804
 GameObject:
   m_ObjectHideFlags: 0
@@ -2169,6 +2193,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &355424786
 GameObject:
   m_ObjectHideFlags: 0
@@ -2214,6 +2240,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 1
+  delay: 0
 --- !u!1 &357619076
 GameObject:
   m_ObjectHideFlags: 0
@@ -2259,6 +2287,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &374551759
 GameObject:
   m_ObjectHideFlags: 0
@@ -2556,6 +2586,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 1
+  delay: 0
 --- !u!1 &416685451
 GameObject:
   m_ObjectHideFlags: 0
@@ -2601,6 +2633,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &418582954
 GameObject:
   m_ObjectHideFlags: 0
@@ -2771,6 +2805,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 1
+  delay: 0
 --- !u!1 &435996660
 GameObject:
   m_ObjectHideFlags: 0
@@ -3116,6 +3152,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 254177672863403903, guid: 734e62066fac24c40aafcaf8f765d9e5, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &492208684
 GameObject:
   m_ObjectHideFlags: 0
@@ -3161,6 +3199,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &498154531
 GameObject:
   m_ObjectHideFlags: 0
@@ -3332,6 +3372,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1001 &505171207
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3792,6 +3834,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &561700490
 GameObject:
   m_ObjectHideFlags: 0
@@ -3837,6 +3881,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &565536160
 GameObject:
   m_ObjectHideFlags: 0
@@ -4004,6 +4050,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &582085937
 GameObject:
   m_ObjectHideFlags: 0
@@ -4049,6 +4097,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &600490364
 GameObject:
   m_ObjectHideFlags: 0
@@ -4094,6 +4144,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &624927439
 GameObject:
   m_ObjectHideFlags: 0
@@ -4139,6 +4191,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983, type: 3}
   spawncap: 0
+  delaytrue: 1
+  delay: 0
 --- !u!1 &631557629
 GameObject:
   m_ObjectHideFlags: 0
@@ -4257,6 +4311,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983, type: 3}
   spawncap: 0
+  delaytrue: 1
+  delay: 0
 --- !u!4 &637723489
 Transform:
   m_ObjectHideFlags: 0
@@ -4316,6 +4372,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 254177672863403903, guid: 734e62066fac24c40aafcaf8f765d9e5, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &645925283
 GameObject:
   m_ObjectHideFlags: 0
@@ -4610,6 +4668,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &679049072
 GameObject:
   m_ObjectHideFlags: 0
@@ -4655,6 +4715,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &688444525
 GameObject:
   m_ObjectHideFlags: 0
@@ -4700,6 +4762,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &690633809
 GameObject:
   m_ObjectHideFlags: 0
@@ -4745,6 +4809,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 254177672863403903, guid: 734e62066fac24c40aafcaf8f765d9e5, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &692946709
 GameObject:
   m_ObjectHideFlags: 0
@@ -4790,6 +4856,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1001 &695593348
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4919,6 +4987,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &718076477
 GameObject:
   m_ObjectHideFlags: 0
@@ -4964,6 +5034,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 1
+  delay: 0
 --- !u!1 &734610755
 GameObject:
   m_ObjectHideFlags: 0
@@ -5009,6 +5081,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 254177672863403903, guid: 734e62066fac24c40aafcaf8f765d9e5, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &740727690
 GameObject:
   m_ObjectHideFlags: 0
@@ -5054,6 +5128,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &746410168
 GameObject:
   m_ObjectHideFlags: 0
@@ -5099,6 +5175,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &749370919
 GameObject:
   m_ObjectHideFlags: 0
@@ -5144,6 +5222,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 1
+  delay: 0
 --- !u!1 &760348373
 GameObject:
   m_ObjectHideFlags: 0
@@ -5189,6 +5269,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &761309755
 GameObject:
   m_ObjectHideFlags: 0
@@ -5313,6 +5395,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &802544350
 GameObject:
   m_ObjectHideFlags: 0
@@ -5358,6 +5442,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &810532722
 GameObject:
   m_ObjectHideFlags: 0
@@ -5403,6 +5489,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 1
+  delay: 0
 --- !u!1 &869435942
 GameObject:
   m_ObjectHideFlags: 0
@@ -5448,6 +5536,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &872501905
 GameObject:
   m_ObjectHideFlags: 0
@@ -5493,6 +5583,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &876420673
 GameObject:
   m_ObjectHideFlags: 0
@@ -5538,6 +5630,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &880337560
 GameObject:
   m_ObjectHideFlags: 0
@@ -5583,6 +5677,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 1
+  delay: 0
 --- !u!1 &885520030
 GameObject:
   m_ObjectHideFlags: 0
@@ -5628,6 +5724,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 1
+  delay: 0
 --- !u!1 &910127491
 GameObject:
   m_ObjectHideFlags: 0
@@ -5673,6 +5771,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &949500392
 GameObject:
   m_ObjectHideFlags: 0
@@ -5763,6 +5863,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &952604747
 GameObject:
   m_ObjectHideFlags: 0
@@ -5808,6 +5910,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 254177672863403903, guid: 734e62066fac24c40aafcaf8f765d9e5, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &953614061
 GameObject:
   m_ObjectHideFlags: 0
@@ -5932,6 +6036,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 1
+  delay: 0
 --- !u!1 &969850532
 GameObject:
   m_ObjectHideFlags: 0
@@ -5977,6 +6083,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 4692872915829419329, guid: 86467ebc31cd46f45b7b1ba991c415d3, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &980523056
 GameObject:
   m_ObjectHideFlags: 0
@@ -6022,6 +6130,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &994304656
 GameObject:
   m_ObjectHideFlags: 0
@@ -6147,6 +6257,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1048025578
 GameObject:
   m_ObjectHideFlags: 0
@@ -6192,6 +6304,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1066656493
 GameObject:
   m_ObjectHideFlags: 0
@@ -6237,6 +6351,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 1
+  delay: 0
 --- !u!1 &1067961990
 GameObject:
   m_ObjectHideFlags: 0
@@ -6282,6 +6398,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1072072703
 GameObject:
   m_ObjectHideFlags: 0
@@ -6327,6 +6445,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1096017382
 GameObject:
   m_ObjectHideFlags: 0
@@ -6358,6 +6478,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 4692872915829419329, guid: 86467ebc31cd46f45b7b1ba991c415d3, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!4 &1096017384
 Transform:
   m_ObjectHideFlags: 0
@@ -6417,6 +6539,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1126912706
 GameObject:
   m_ObjectHideFlags: 0
@@ -6542,6 +6666,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1153069716
 GameObject:
   m_ObjectHideFlags: 0
@@ -6587,6 +6713,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1158370936
 GameObject:
   m_ObjectHideFlags: 0
@@ -6632,6 +6760,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 254177672863403903, guid: 734e62066fac24c40aafcaf8f765d9e5, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1164056307
 GameObject:
   m_ObjectHideFlags: 0
@@ -6677,6 +6807,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1172639381
 GameObject:
   m_ObjectHideFlags: 0
@@ -6722,6 +6854,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1183101092
 GameObject:
   m_ObjectHideFlags: 0
@@ -6936,6 +7070,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1201696194
 GameObject:
   m_ObjectHideFlags: 0
@@ -6981,6 +7117,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1202536966
 GameObject:
   m_ObjectHideFlags: 0
@@ -7026,6 +7164,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1209118136
 GameObject:
   m_ObjectHideFlags: 0
@@ -7071,6 +7211,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 1
+  delay: 0
 --- !u!1 &1216032488
 GameObject:
   m_ObjectHideFlags: 0
@@ -7252,6 +7394,55 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
+--- !u!1 &1226685341
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1226685343}
+  - component: {fileID: 1226685342}
+  m_Layer: 0
+  m_Name: PowerUpManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1226685342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226685341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d302e96beb0b1f4d8321f8099b1921f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PowerUp1: {fileID: 8266097504255964015, guid: 29e976e8a62d87a469119bf9eb54bd47,
+    type: 3}
+  PowerUp2: {fileID: 1732247804099408435, guid: 28b6f5d9a14a0e5438ee557cdfad619a,
+    type: 3}
+--- !u!4 &1226685343
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226685341}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.955816, y: -4.697278, z: -1.63153}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1243206037
 GameObject:
   m_ObjectHideFlags: 0
@@ -7297,6 +7488,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1248670544
 GameObject:
   m_ObjectHideFlags: 0
@@ -7342,6 +7535,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 4692872915829419329, guid: 86467ebc31cd46f45b7b1ba991c415d3, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1250193170
 GameObject:
   m_ObjectHideFlags: 0
@@ -7387,6 +7582,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 254177672863403903, guid: 734e62066fac24c40aafcaf8f765d9e5, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1255433117
 GameObject:
   m_ObjectHideFlags: 0
@@ -7432,6 +7629,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1258205852
 GameObject:
   m_ObjectHideFlags: 0
@@ -7648,6 +7847,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1001 &1311959124
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7762,6 +7963,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983, type: 3}
   spawncap: 0
+  delaytrue: 1
+  delay: 0
 --- !u!1 &1317371242
 GameObject:
   m_ObjectHideFlags: 0
@@ -7916,6 +8119,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1348351417
 GameObject:
   m_ObjectHideFlags: 0
@@ -7961,6 +8166,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1370807929
 GameObject:
   m_ObjectHideFlags: 0
@@ -8006,6 +8213,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 1
+  delay: 0
 --- !u!1 &1393812863
 GameObject:
   m_ObjectHideFlags: 0
@@ -8051,6 +8260,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 1
+  delay: 0
 --- !u!1 &1398337702
 GameObject:
   m_ObjectHideFlags: 0
@@ -8175,6 +8386,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 254177672863403903, guid: 734e62066fac24c40aafcaf8f765d9e5, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1399850683
 GameObject:
   m_ObjectHideFlags: 0
@@ -8220,6 +8433,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1409240328
 GameObject:
   m_ObjectHideFlags: 0
@@ -8667,6 +8882,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1448363551
 GameObject:
   m_ObjectHideFlags: 0
@@ -8791,6 +9008,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 1
+  delay: 0
 --- !u!1 &1459256161
 GameObject:
   m_ObjectHideFlags: 0
@@ -8836,6 +9055,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 254177672863403903, guid: 734e62066fac24c40aafcaf8f765d9e5, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1465168781
 GameObject:
   m_ObjectHideFlags: 0
@@ -8915,6 +9136,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1552036383
 GameObject:
   m_ObjectHideFlags: 0
@@ -9145,6 +9368,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 1
+  delay: 0
 --- !u!1 &1561409530
 GameObject:
   m_ObjectHideFlags: 0
@@ -9190,6 +9415,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 254177672863403903, guid: 734e62066fac24c40aafcaf8f765d9e5, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1578968353
 GameObject:
   m_ObjectHideFlags: 0
@@ -9859,6 +10086,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 1
+  delay: 0
 --- !u!1 &1603858913
 GameObject:
   m_ObjectHideFlags: 0
@@ -9904,6 +10133,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 1
+  delay: 0
 --- !u!1 &1633406146
 GameObject:
   m_ObjectHideFlags: 0
@@ -9949,6 +10180,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!4 &1664741668 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8686832424286926341, guid: cfb72c400cc64f047bb87f4bd041e2b5,
@@ -10000,6 +10233,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1696057752
 GameObject:
   m_ObjectHideFlags: 0
@@ -10045,6 +10280,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1703313838
 GameObject:
   m_ObjectHideFlags: 0
@@ -10169,6 +10406,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 4692872915829419329, guid: 86467ebc31cd46f45b7b1ba991c415d3, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1736120421
 GameObject:
   m_ObjectHideFlags: 0
@@ -10293,6 +10532,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1745085089
 GameObject:
   m_ObjectHideFlags: 0
@@ -10401,6 +10642,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1760751875
 GameObject:
   m_ObjectHideFlags: 0
@@ -10446,6 +10689,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1769004491
 GameObject:
   m_ObjectHideFlags: 0
@@ -10491,6 +10736,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 1
+  delay: 0
 --- !u!1 &1781260537
 GameObject:
   m_ObjectHideFlags: 0
@@ -10536,6 +10783,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 254177672863403903, guid: 734e62066fac24c40aafcaf8f765d9e5, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1790247437
 GameObject:
   m_ObjectHideFlags: 0
@@ -10581,6 +10830,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1796872182
 GameObject:
   m_ObjectHideFlags: 0
@@ -10626,6 +10877,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1800150906
 GameObject:
   m_ObjectHideFlags: 0
@@ -10750,6 +11003,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1839942314
 GameObject:
   m_ObjectHideFlags: 0
@@ -10874,6 +11129,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 1
+  delay: 0
 --- !u!1 &1859233107
 GameObject:
   m_ObjectHideFlags: 0
@@ -11093,6 +11350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d98117ff09d6ba244bf1f59cb97d1081, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  time: 1
 --- !u!1 &1924540024
 GameObject:
   m_ObjectHideFlags: 0
@@ -11138,6 +11396,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1934477930
 GameObject:
   m_ObjectHideFlags: 0
@@ -11183,6 +11443,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1950850059
 GameObject:
   m_ObjectHideFlags: 0
@@ -11228,6 +11490,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1955322566
 GameObject:
   m_ObjectHideFlags: 0
@@ -11273,6 +11537,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1967521687
 GameObject:
   m_ObjectHideFlags: 0
@@ -11318,6 +11584,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1971134238
 GameObject:
   m_ObjectHideFlags: 0
@@ -11363,6 +11631,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1977036232
 GameObject:
   m_ObjectHideFlags: 0
@@ -11462,6 +11732,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &1983201489
 GameObject:
   m_ObjectHideFlags: 0
@@ -11507,6 +11779,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 4692872915829419329, guid: 86467ebc31cd46f45b7b1ba991c415d3, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &2017069005
 GameObject:
   m_ObjectHideFlags: 0
@@ -11552,6 +11826,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &2059065511
 GameObject:
   m_ObjectHideFlags: 0
@@ -11642,6 +11918,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1001 &2076958991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11766,6 +12044,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 2615797213479431566, guid: 7503181c24c3fdf45970edc2f97b4983, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &2110132438
 GameObject:
   m_ObjectHideFlags: 0
@@ -11811,6 +12091,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &2111396338
 GameObject:
   m_ObjectHideFlags: 0
@@ -11856,6 +12138,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 4692872915829419329, guid: 86467ebc31cd46f45b7b1ba991c415d3, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &2112118206
 GameObject:
   m_ObjectHideFlags: 0
@@ -11980,6 +12264,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 4692872915829419329, guid: 86467ebc31cd46f45b7b1ba991c415d3, type: 3}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!4 &2118697933 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8686832424286926341, guid: cfb72c400cc64f047bb87f4bd041e2b5,
@@ -12031,6 +12317,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy: {fileID: 0}
   spawncap: 0
+  delaytrue: 0
+  delay: 0
 --- !u!1 &2129480824
 GameObject:
   m_ObjectHideFlags: 0

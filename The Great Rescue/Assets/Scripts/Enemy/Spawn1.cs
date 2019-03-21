@@ -9,26 +9,49 @@ public class Spawn1 : MonoBehaviour
     public GameObject Enemy;
     public int spawncap = 0;
     int spawned= 1;
+    public bool delaytrue = true;
+    public float delay;
+    private float time=0;
+   
+    private bool delayed= false;
+    
     // Start is called before the first frame update
     void Start()
     {
-        SpawnEnemy1();
-
+        if (delaytrue == false)
+        {
+            SpawnEnemy1();
+        }
+   
     }
 
     // Update is called once per frame
     void Update()
     {
-  
+        if (delaytrue == true)
+        {
+            if (delayed == false)
+            {
+                time += Time.deltaTime;
+            }
+            if (time >= delay)
+            {
+                delayed = true; 
+                SpawnEnemy1();
+                time = 0;
+            }
+        }
+
     }
     void Respawn()
     {
-        if (spawncap >= spawned)
+        if (spawncap-1 >= spawned)
         {
             spawned++;
             SpawnEnemy1();
         }
     }
+
 
 
     void SpawnEnemy1()
