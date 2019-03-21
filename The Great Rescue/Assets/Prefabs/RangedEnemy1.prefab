@@ -255,7 +255,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 70
   health: 1
-  PowerUp: {fileID: 8266097504255964015, guid: 29e976e8a62d87a469119bf9eb54bd47, type: 3}
+  PowerUp1: {fileID: 8266097504255964015, guid: 29e976e8a62d87a469119bf9eb54bd47,
+    type: 3}
+  PowerUp2: {fileID: 1732247804099408435, guid: 28b6f5d9a14a0e5438ee557cdfad619a,
+    type: 3}
   targ: {fileID: 3680383941768100686}
   DeathSound: {fileID: 440483927174221761, guid: dd9747349f8b5a94286e5d234e807177,
     type: 3}
