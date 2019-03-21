@@ -40,7 +40,7 @@ public class BgScrollPara : MonoBehaviour
         
             if (checkpos1.x == -180)
             {
-                print("false");
+               
            
                 
                 BG1.transform.position = orgpos1;

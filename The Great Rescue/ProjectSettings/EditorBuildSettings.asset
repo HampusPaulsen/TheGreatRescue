@@ -9,18 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/1. HowToPlayScene.unity
     guid: c16ad7e960faaaf42a0694d4cbcd1836
   - enabled: 1
+    path: Assets/Scenes/3. MainScene.unity
+    guid: f1fc2c3ffeb9fdf4595fea1b0054255f
+  - enabled: 1
     path: Assets/Scenes/2. Comic.unity
     guid: fc05ca4e9f519be4fb869d8f2ae1ae41
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/Scenes/3. MainScene.unity
-    guid: 53bc2b99bcd375842b99d0ff9604941c
   - enabled: 1
     path: Assets/Scenes/4. CreditsScene.unity
     guid: adedae9923772a349a481166a564c6d2
   - enabled: 1
     path: Assets/Scenes/5. DeathScene.unity
-    guid: 3d135a0c38f8ee848ab5f9198a4020dc
+    guid: 7238ab5eb35bd2b4fa1043fbf7ce5529
   m_configObjects: {}
