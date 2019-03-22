@@ -348,7 +348,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f5aca26e3c262c49be0a859683dafc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   piercingtime: 60
+=======
+  piercingtime: 10
+  PwSound: {fileID: 0}
+>>>>>>> 0f264dd65bd71372c0cf865449e2f2d9158a19d4
   top: {fileID: 1861884041}
   left: {fileID: 565536160}
   right: {fileID: 1415941242}
@@ -6198,6 +6203,53 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1021639912
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1021639914}
+  - component: {fileID: 1021639913}
+  m_Layer: 0
+  m_Name: spawner1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1021639913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021639912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9d40f3d0e28a24469e78d3a1622a709, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enemy: {fileID: 254177672863403903, guid: 734e62066fac24c40aafcaf8f765d9e5, type: 3}
+  spawncap: 4
+  delaytrue: 0
+  delay: 0
+--- !u!4 &1021639914
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021639912}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 111.15632, y: 7.543871, z: -3.8018472}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1023427687
 GameObject:
   m_ObjectHideFlags: 0
@@ -10033,6 +10085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piercingtime: 20
+  PwSound: {fileID: 6377867201880361394, guid: 08b0cf9c0114fd44ca4ce388a33b8496, type: 3}
   top: {fileID: 1861884041}
   left: {fileID: 565536160}
   right: {fileID: 1415941242}
@@ -12576,7 +12629,7 @@ PrefabInstance:
     - target: {fileID: 6051578768129732521, guid: 3daf673697f81fb41ae5b65adf406ca1,
         type: 3}
       propertyPath: firerate
-      value: 0.3
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 6051578768129732521, guid: 3daf673697f81fb41ae5b65adf406ca1,
         type: 3}

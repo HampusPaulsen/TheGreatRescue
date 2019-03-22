@@ -14,6 +14,9 @@ public class RangedEnemy2 : MonoBehaviour
     public GameObject targ;
     public GameObject DeathSound;
     public GameObject DeathParticle;
+    public float colortime = 0.5f;
+    private float time = 0;
+    private bool changecolor=false;
 
 
 
@@ -34,6 +37,17 @@ public class RangedEnemy2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (changecolor == true)
+        {
+            time += Time.deltaTime;
+            GetComponent<SpriteRenderer>().color = new Color(255, 0, 0, 255);
+            if (time >= colortime)
+            {
+                time = 0;
+                changecolor = false;
+                GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 255);
+            }
+        }
         position = gameObject.transform.position;
         if (GameObject.Find("PlayerCharacter") == null)
         {
@@ -71,6 +85,7 @@ public class RangedEnemy2 : MonoBehaviour
         if (col.gameObject.name == "BulletPrefab(Clone)")
         {
 
+            changecolor = true;
             health--;
         }
     }
