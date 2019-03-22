@@ -11,6 +11,9 @@ public class PlayerScript : MonoBehaviour
     public float piercingtime = 5f;
     private float timeelapsed = 0;
 
+    public GameObject PwSound;
+    private GameObject PwSoundInstace;
+
     public GameObject top;
     public GameObject left;
     public GameObject right;
@@ -136,7 +139,13 @@ public class PlayerScript : MonoBehaviour
         //checks if colliding with piercing powerup
         if (col.gameObject.tag == "piercing")
         {
+            PwSoundInstace = Instantiate(PwSound) as GameObject;
             pierceshot = true;
+        }
+        if (col.gameObject.tag == "Powerup")
+        {
+            PwSoundInstace = Instantiate(PwSound) as GameObject;
+
         }
 
             //checks if colliding with Enemy Bullets

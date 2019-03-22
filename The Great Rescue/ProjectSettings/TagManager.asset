@@ -13,6 +13,7 @@ TagManager:
   - laser
   - piercing
   - orc
+  - Powerup
   layers:
   - Default
   - TransparentFX
