@@ -11,10 +11,12 @@ public class RangedEnemy1 : MonoBehaviour
     public float speed;
     public int health = 1;
     private float direction;
+    public GameObject PowerUp1;
+    public GameObject PowerUp2;
     public GameObject targ;
     public GameObject DeathSound;
-    public GameObject DeathParticle;
-    
+    private int pick;
+
     
    
 
@@ -24,16 +26,16 @@ public class RangedEnemy1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
+        pick = Random.Range(1, 3);
         target = targ.transform.position;
-       
+        position = gameObject.transform.position;
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        position = gameObject.transform.position;
+       
         if (GameObject.Find("PlayerCharacter") == null)
         {
 
@@ -41,24 +43,40 @@ public class RangedEnemy1 : MonoBehaviour
            
             Destroy(gameObject);
         }
- 
-        
-        if (health <= 0)
+        if (pick == 1)
         {
-             
-            ScoreScript.ScoreValue += 1;
-            BodyCount.Goblin += 1;
-            gameObject.SendMessageUpwards("Respawn");
-            DeathSound = Instantiate(DeathSound) as GameObject;
-            DeathParticle = Instantiate(DeathParticle) as GameObject;
-            DeathParticle.transform.position = gameObject.transform.position;
-            DeathSound.transform.position = gameObject.transform.position;
-            PowerUpManager.powerspawn = true;
-            PowerUpManager.entitypos = position;
-            Destroy(gameObject);
+            if (health == 0 && health < 5)
+            {
+                if (Random.Range(1, 10) == 3)
+                {
+                    PowerUp1 = Instantiate(PowerUp1) as GameObject;
+                    PowerUp1.transform.position = gameObject.transform.position;
+                }
+                ScoreScript.ScoreValue += 1;
+                BodyCount.Goblin += 1;
+                gameObject.SendMessageUpwards("Respawn");
+                DeathSound = Instantiate(DeathSound) as GameObject;
+                DeathSound.transform.position = gameObject.transform.position;
+                Destroy(gameObject);
+            }
         }
-        
-
+        if (pick == 2)
+        {
+            if (health == 0)
+            {
+                if (Random.Range(1, 5) == 3)
+                {
+                    PowerUp2 = Instantiate(PowerUp2) as GameObject;
+                    PowerUp2.transform.position = gameObject.transform.position;
+                }
+                ScoreScript.ScoreValue += 1;
+                BodyCount.Goblin += 1;
+                gameObject.SendMessageUpwards("Respawn");
+                DeathSound = Instantiate(DeathSound) as GameObject;
+                DeathSound.transform.position = gameObject.transform.position;
+                Destroy(gameObject);
+            }
+        }
 
         transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
         

@@ -47,10 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyBulletGO: {fileID: 4756458138964728266, guid: 32df9202e70ac5949ad61f856f903568,
     type: 3}
-  soundeffect: {fileID: 2110765422787797928, guid: afb547f77712c794387f64dbe1f5e61c,
-    type: 3}
-  fireratemin: 1
-  fireratemax: 6
+  firerate: 2
 --- !u!114 &2615797213147618399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,8 +261,6 @@ MonoBehaviour:
     type: 3}
   targ: {fileID: 3680383941768100686}
   DeathSound: {fileID: 440483927174221761, guid: dd9747349f8b5a94286e5d234e807177,
-    type: 3}
-  DeathParticle: {fileID: 6831511849956764539, guid: 490da7fc79e602f42b4b5504fdfdc9d5,
     type: 3}
 --- !u!61 &2615797213479431567
 BoxCollider2D:

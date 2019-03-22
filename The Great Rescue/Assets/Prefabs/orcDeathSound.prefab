@@ -140,7 +140,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39602fb3912d2e34783d9212a6d72dd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  efxSource: {fileID: 9146260990695062205}
   time: 2
-  lowPitchRange: 0.95
-  highPitchRange: 1.05

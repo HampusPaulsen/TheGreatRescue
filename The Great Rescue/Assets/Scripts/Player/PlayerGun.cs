@@ -7,8 +7,6 @@ public class PlayerGun : MonoBehaviour
     // [SerializeField]
     //private float firerate = 0.0f; //Change to change firerate
     AudioSource m_MyAudioSource;
-    public float lowPitchRange = .95f;              //The lowest a sound effect will be randomly pitched.
-    public float highPitchRange = 1.05f;            //The highest a sound effect will be randomly pitched.
 
     [SerializeField]
     private LayerMask whatToHit; //Remember to include layers that should be able to be hit
@@ -60,18 +58,13 @@ public class PlayerGun : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space) && time >= firerate)
             {
                 time = 0;
-                float randomPitch = Random.Range(lowPitchRange, highPitchRange);
-                m_MyAudioSource.pitch = randomPitch;
                 m_MyAudioSource.Play();
-                
                 Shoot();
             }
 
             if (Input.GetKeyDown(KeyCode.Mouse0) && time >= firerate)
             {
                 time = 0;
-                float randomPitch = Random.Range(lowPitchRange, highPitchRange);
-                m_MyAudioSource.pitch = randomPitch;
                 m_MyAudioSource.Play();
                 Shoot();
             }
@@ -79,8 +72,6 @@ public class PlayerGun : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Mouse1) && time >= firerate)
             {
                 time = 0;
-                float randomPitch = Random.Range(lowPitchRange, highPitchRange);
-                m_MyAudioSource.pitch = randomPitch;
                 m_MyAudioSource.Play();
                 Shoot();
             }

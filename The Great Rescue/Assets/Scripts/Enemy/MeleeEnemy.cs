@@ -11,8 +11,8 @@ public class MeleeEnemy : MonoBehaviour
     public float speed;
     public int health = 2;
     private float direction;
+    public GameObject PowerUp;
     public GameObject DeathSound;
-    public GameObject DeathParticle;
 
 
 
@@ -38,18 +38,18 @@ public class MeleeEnemy : MonoBehaviour
 
             Destroy(gameObject);
         }
-        if (health <= 0)
+        if (health == 0 && health < 5)
         {
-          
+            if (Random.Range(1, 13) == 3)
+            {
+                PowerUp = Instantiate(PowerUp) as GameObject;
+                PowerUp.transform.position = gameObject.transform.position;
+            }
             ScoreScript.ScoreValue += 1;
             BodyCount.Orc += 1;
             gameObject.SendMessageUpwards("Respawn");
             DeathSound = Instantiate(DeathSound) as GameObject;
-            DeathParticle = Instantiate(DeathParticle) as GameObject;
-            DeathParticle.transform.position = gameObject.transform.position;
             DeathSound.transform.position = gameObject.transform.position;
-            PowerUpManager.powerspawn = true;
-            PowerUpManager.entitypos = position;
             Destroy(gameObject);
         }
         GameObject player = GameObject.Find("PlayerCharacter");

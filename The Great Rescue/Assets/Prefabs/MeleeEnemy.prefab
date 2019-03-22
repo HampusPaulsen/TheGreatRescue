@@ -115,8 +115,6 @@ MonoBehaviour:
   PowerUp: {fileID: 8266097504255964015, guid: 29e976e8a62d87a469119bf9eb54bd47, type: 3}
   DeathSound: {fileID: 6717494384574080516, guid: a4c8e7326436ec54c9dfc9d92479991a,
     type: 3}
-  DeathParticle: {fileID: 6831511849956764539, guid: 490da7fc79e602f42b4b5504fdfdc9d5,
-    type: 3}
 --- !u!61 &567294360242970417
 BoxCollider2D:
   m_ObjectHideFlags: 0
