@@ -7,15 +7,19 @@ public class EnemyGun : MonoBehaviour
 {
     AudioSource m_MyAudioSource;
     public GameObject EnemyBulletGO;
+    public GameObject soundeffect;
     float time;
-    public float firerate;
+    public float fireratemin=1;
+    public float fireratemax=5;
+    private float firerate;
   
 
 
     // Start is called before the first frame update
     void Start()
     {
-        m_MyAudioSource = GetComponent<AudioSource>();
+        firerate = Random.Range(fireratemin, fireratemax);
+        time = 0;
     }
 
     // Update is called once per frame
@@ -27,11 +31,17 @@ public class EnemyGun : MonoBehaviour
             if (time >= firerate)
             {
                 time = 0;
-                m_MyAudioSource.Play();
+
+                ResetFire();
+                
                 Invoke("FireEnemyBullet", 2f);
             }
         }
 
+    }
+    void ResetFire()
+    {
+        firerate = Random.Range(fireratemin, fireratemax);
     }
    
 
@@ -44,6 +54,8 @@ public class EnemyGun : MonoBehaviour
             bullet.transform.position = transform.position;
             Vector2 direction = player.transform.position - bullet.transform.position;
             bullet.GetComponent<EnemyBullet>().SetDirection(direction);
+            soundeffect = Instantiate(soundeffect) as GameObject;
+            soundeffect.transform.position = gameObject.transform.position;
 
         }
     }
